@@ -45,10 +45,8 @@
 }
 
 @mixin inset-panel() {
-  background-color: transparent;
+  background-color:scale-color(#e2e8f0, $lightness: -70%)  ;
   border: none;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #404040;
   border-radius: 5px;
-  box-shadow: 0 0 200px rgba(0, 0, 0, 0.33) inset;
+  // box-shadow: 0 0 200px rgba(0, 0, 0, 0.33) inset;
 }

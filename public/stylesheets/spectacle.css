@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 /**
  * Foundation for Sites by ZURB
  * Version 6.4.1
@@ -1003,7 +1004,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     padding-right: 1rem;
     padding-bottom: 2rem;
     border-right: 1px solid #eee;
-    background-color: #f6f6f6;
+    background-color: #16263c !important;
     height: 100vh;
     overflow: auto;
     position: fixed;
@@ -1013,19 +1014,30 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     width: 250px; }
     #spectacle #sidebar h5 {
       margin: 1.5rem 0 0.65rem;
-      text-transform: uppercase;
-      color: #b6b6b6;
-      font-size: 0.9rem; }
+      color: #b2b2b2;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500; }
     #spectacle #sidebar a {
+      font-family: 'Poppins', sans-serif;
       display: block;
-      margin: 0 0 0.25rem;
-      color: #4a5055;
+      margin: 0 0 0.2rem;
+      padding-left: 0.4rem;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      color: #e5e5e5;
       white-space: nowrap;
       overflow: hidden;
       -o-text-overflow: ellipsis;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      font-weight: 500;
+      border-radius: 7px; }
       #spectacle #sidebar a.active {
-        color: #1779ba; }
+        background-color: #30435c;
+        color: #ffffff; }
+    #spectacle #sidebar a:hover {
+      background-color: #30435c;
+      color: #ffffff; }
     #spectacle #sidebar ul {
       list-style-type: none;
       padding: 0;
@@ -1045,7 +1057,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     padding-bottom: 2em;
     border-top: 1px solid #e2e2e2; }
   #spectacle #docs {
-    background: #fefefe;
+    background: #f6f9ff;
     overflow: hidden;
     position: relative; }
     #spectacle #docs .example-box {
@@ -1053,7 +1065,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     @media print, screen and (min-width: 64em) {
       #spectacle #docs .example-box {
         display: block;
-        background-color: #2d3134;
+        background-color: #16263c;
         position: absolute;
         right: 0;
         top: 0;
@@ -1073,14 +1085,15 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     #spectacle article p:last-child:first-child {
       margin-bottom: 0; }
     #spectacle article h1 {
+      font-family: 'Poppins', sans-serif;
       margin: 2.5rem 0 0;
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
+      font-weight: 500;
+      color: #1b2f4b;
       padding-left: 2.25rem;
       padding-right: 2.25rem;
-      border-top: 1px solid #e8e8e8;
-      border-bottom: 1px solid #e2e2e2;
-      background-color: #f6f6f6; }
+      background-color: #eff6ff; }
     #spectacle article h1.doc-title {
       margin: 0;
       padding-top: 2.15rem;
@@ -1088,7 +1101,8 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
       font-weight: bold;
       background: transparent;
       border: none;
-      color: #535b60; }
+      color: #2d4e7b;
+      font-family: 'Poppins', sans-serif; }
       #spectacle article h1.doc-title span {
         display: none;
         opacity: 0.65;
@@ -1104,9 +1118,11 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
       background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0)));
       background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
       background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)); }
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+      font-family: 'Poppins', sans-serif; }
     #spectacle article h3 {
-      margin: 0rem 0 0.75rem; }
+      margin: 0rem 0 0.75rem;
+      font-family: 'Poppins', sans-serif; }
     #spectacle article h1 + .panel > h2 {
       margin-top: 0;
       border-top: none; }
@@ -1156,11 +1172,13 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
       padding-left: 2.25rem !important;
       padding-right: 2.25rem !important;
       color: #fefefe;
-      background-color: #2d3134; }
+      background-color: #16263c;
+      border-radius: 10px; }
       #spectacle article .doc-examples h5 {
         color: #fefefe;
         font-size: 1rem;
-        opacity: 0.8; }
+        opacity: 0.8;
+        font-family: 'Poppins', sans-serif; }
         #spectacle article .doc-examples h5 span {
           opacity: 0.5; }
       @media screen and (max-width: 63.9375em) {
@@ -1174,13 +1192,10 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
         padding: 1.5rem;
         font-family: Consolas, "Liberation Mono", Courier, monospace;
         font-weight: inherit;
-        color: inherit;
-        background-color: transparent;
+        color: #ffffff;
+        background-color: #30435c;
         border: none;
-        border-top: 1px solid #000;
-        border-bottom: 1px solid #404040;
         border-radius: 5px;
-        box-shadow: 0 0 200px rgba(0, 0, 0, 0.33) inset;
         word-spacing: normal;
         white-space: pre-wrap;
         word-break: normal; }
@@ -1194,12 +1209,9 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
       #spectacle article .doc-examples thead {
         background-color: #2d3134; }
       #spectacle article .doc-examples .swagger-response-headers {
-        background-color: transparent;
+        background-color: #30435c;
         border: none;
-        border-top: 1px solid #000;
-        border-bottom: 1px solid #404040;
         border-radius: 5px;
-        box-shadow: 0 0 200px rgba(0, 0, 0, 0.33) inset;
         margin-bottom: 1.5rem; }
         #spectacle article .doc-examples .swagger-response-headers thead {
           color: #fefefe;
@@ -1352,7 +1364,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   #spectacle .hljs-selector-tag,
   #spectacle .hljs-name,
   #spectacle .hljs-attr {
-    color: #f92672; }
+    color: #ffffff; }
   #spectacle .hljs-symbol,
   #spectacle .hljs-attribute {
     color: #66d9ef; }
@@ -1369,7 +1381,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   #spectacle .hljs-addition,
   #spectacle .hljs-variable,
   #spectacle .hljs-template-variable {
-    color: #e6db74; }
+    color: #71c2ed; }
   #spectacle .hljs-comment,
   #spectacle .hljs-deletion,
   #spectacle .hljs-meta {

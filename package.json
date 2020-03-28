@@ -9,7 +9,7 @@
   "scripts": {
     "build": "node bin/spectacle -l test/fixtures/cheese.png test/fixtures/cheese.yml",
     "test": "mocha && node bin/spectacle -l test/fixtures/cheese.png test/fixtures/cheese.yml",
-    "develop": "spectacle -d",
+    "develop": "spectacle -a /Users/kelvinchua/GitHub/spectacle/app -l /Users/kelvinchua/Downloads/finch.svg -D",
     "start": "spectacle -s"
   },
   "repository": {

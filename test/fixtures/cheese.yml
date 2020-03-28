@@ -1,6 +1,10 @@
 swagger: '2.0'
 info:
-  description: |
+  description:
+
+    |
+    
+    # SOME TITLE
     Welcome to the sample Cheese Store API reference. This is a live example of how you can use [Spectacle](https://sourcey.com/spectacle) in conjunction with [Swagger](https://swagger.io) to generate beautiful static documentation for your own APIs.
 
     The Cheese Store API is organized around the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) methodology, and it uses resource-oriented URLs, and common HTTP response codes to indicate API errors. All requests are authenticated using an `api-key` which can be obtained from your developer dashboard. And now, more cheese...

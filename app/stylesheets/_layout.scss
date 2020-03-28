@@ -61,7 +61,7 @@ button:focus {
   padding-right: 1rem;
   padding-bottom: 2rem;
   border-right: 1px solid #eee;
-  background-color: #f6f6f6;
+  background-color: #16263c !important;
   height: 100vh;
   overflow: auto;
   position: fixed;
@@ -72,25 +72,38 @@ button:focus {
 
   h5 {
     margin: 1.5rem 0 0.65rem;
-    text-transform: uppercase;
-    color: scale-color($medium-gray, $lightness: -10%);
+    // text-transform: uppercase;
+    color: scale-color($white, $lightness: -30%);
+    font-family: 'Poppins', sans-serif;
     // color: $accent-color;
     font-size: 0.9rem;
+    font-weight: 500;
   }
 
   a {
+    font-family: 'Poppins', sans-serif;
     display: block;
     // font-size: 0.95rem;
-    margin: 0 0 0.25rem;
-    color: scale-color($black, $lightness: 15%);
+    margin: 0 0 0.2rem;
+    padding-left: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    color: scale-color($white, $lightness: -10%);
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-
+    font-weight: 500;
+    border-radius: 7px;
     &.active {
-      color: $primary-color;
+      background-color: scale-color(#e2e8f0, $lightness: -70%);
+      color: #ffffff;
     }
+  }
+
+  a:hover {
+    background-color: scale-color(#e2e8f0, $lightness: -70%);
+    color: #ffffff;
   }
 
   ul {
@@ -133,7 +146,7 @@ button:focus {
 }
 
 #docs {
-  background: $white;
+  background: #f6f9ff;
   overflow: hidden;
   position: relative;
 
@@ -146,7 +159,7 @@ button:focus {
       // width: 50%;
       display: block;
       // background-color: #2E2F28;
-      background-color: $black;
+      background-color: #16263c;
       position: absolute;
       right: 0;
       top: 0;
@@ -188,14 +201,17 @@ article {
   // Titles
 
   h1 {
+    font-family: 'Poppins', sans-serif;
     margin: 2.5rem 0 0;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+    font-weight: 500;
+    color: #1b2f4b;
     padding-left: $column-padding;
     padding-right: $column-padding;
-    border-top: 1px solid #e8e8e8;
-    border-bottom: 1px solid #e2e2e2;
-    background-color: #f6f6f6;
+    // border-top: 1px solid #e8e8e8;
+    // border-bottom: 1px solid #e2e2e2;
+    background-color: #eff6ff;
     // border-top: 1px solid #ddd;
     // border-bottom: 1px solid #ccc;
     // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -214,7 +230,8 @@ article {
     font-weight: bold;
     background: transparent;
     border: none;
-    color: scale-color($black, $lightness: 20%);
+    color: scale-color(#16263c, $lightness: 20%);
+    font-family: 'Poppins', sans-serif;
 
     span {
       display: none;
@@ -236,10 +253,12 @@ article {
     background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
     background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    font-family: 'Poppins', sans-serif;
   }
 
   h3 {
     margin: 0rem 0 0.75rem;
+    font-family: 'Poppins', sans-serif;
   }
 
   > h1, > h2 {
@@ -372,13 +391,15 @@ article {
 
     //color: $dark-gray;
     color: $white;
-    background-color: $dark-background-color;
+    background-color: #16263c;
+    border-radius: 10px;
 
     h5 {
       color: $white;
       //color: $medium-gray;
       font-size: 1rem;
       opacity: 0.8;
+      font-family: 'Poppins', sans-serif;
 
       span {
         opacity: 0.5;
@@ -400,7 +421,7 @@ article {
       padding: 1.5rem;
       font-family: Consolas, "Liberation Mono", Courier, monospace;
       font-weight: inherit;
-      color: inherit;
+      color: #ffffff;
       @include inset-panel();
       word-spacing: normal;
       white-space: pre-wrap;
